@@ -5,6 +5,7 @@ upperLimit = 10
 lowerLimit = 1
 startValue = 1000000
 valueToSend = 1000
+limit = 10000
 
 class Country:#клас, який уособлює країну
 
@@ -211,6 +212,8 @@ def Program():
                 continue
             Complete()
             ShowCompleted()
+            if day > limit:
+                break
 
 def Free(xb, yb, xe, ye):#перевіряє, чи вільні координати, на які претендує нова країна
     for country in countries:
